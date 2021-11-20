@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+:root {
+  --vermelho:#EE000C;
+  --preto:#010101;
+}
+
+* {
+  margin:0 ;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*elementos base */
+body {
+  background: var(--preto);
+  font-family: 'Poppins', Arial,sans-serif;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ header .logo {
+  color: var(--vermelho);
+  font-family: 'Arial black';
+  font-size: 40px;
+  margin-left: 5px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/*filme principal*/
+.filme-principal {
+  font-size:14px ;
+  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/fundo-familia.jpg') ;
+  
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  
+  
+}
+
+.filme-principal .descricao {
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.titulo {
+  margin-top: 10%;
+  font-family: 'Poppins', 'Trebuchet MS',Arial,sans-serif;
+  font-size: 35px;
+
+}
+
+.botao {
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  margin-right: 10px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: .5s ease all;
+}
+
+.botao:hover {
+  background-color:white ;
+  color: black;
+}
+
+.botao i {
+  margin-right: 7px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+
+.box-filmes {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carrosel-filmes {
+  margin-top: 5px;
+}
